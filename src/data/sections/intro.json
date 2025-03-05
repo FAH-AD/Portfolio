@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "first": "Unique",
+      "second": "brand Stories"
+    },
+    "content": "If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration.",
+    "image": "https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062008.jpg?ga=GA1.1.780259473.1715497100&semt=ais_hybrid"
+  },
+  {
+    "id": 2,
+    "title": {
+      "first": "Digital",
+      "second": "Design Awards"
+    },
+    "content": "If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration.",
+    "image": "https://img.freepik.com/free-photo/person-working-html-computer_23-2150038841.jpg?ga=GA1.1.780259473.1715497100&semt=ais_hybrid"
+  },
+  {
+    "id": 3,
+    "title": "Original Solutions",
+    "content": "If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration.",
+    "image": "https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?ga=GA1.1.780259473.1715497100&semt=ais_hybrid"
+  }
+]
