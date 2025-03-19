@@ -1,24 +1,25 @@
-import React from "react";
-import AboutUs1 from "../components/About-us1";
+import React, { useEffect, useRef, useState } from "react";
+import AboutUs from "../components/About-us";
 import CallToAction from "../components/Call-to-action";
-import Clients1 from "../components/Clients1";
+import Clients from "../components/Clients";
 import Footer from "../components/Footer";
-import IntroWithSlider1 from "../components/Intro-with-slider1";
+import IntroWithSlider from "../components/Intro-with-slider";
 import Navbar from "../components/Navbar";
-import Numbers1 from "../components/Numbers";
-import Services1 from "../components/Services1";
+import Numbers from "../components/Numbers";
+import Services from "../components/Services";
 import SkillsCircle from "../components/Skills-circle";
 import VideoWithTestimonials from "../components/Video-with-testimonials";
-import Works1Slider from "../components/Works1-slider";
+import WorksSlider from "../components/Works-slider";
 import DarkTheme from "../layouts/Dark";
 
 const Homepage1 = () => {
-  const fixedSlider = React.useRef(null);
-  const MainContent = React.useRef(null);
-  const navbarRef = React.useRef(null);
-  const logoRef = React.useRef(null);
+  const fixedSlider = useRef(null);
+  const MainContent = useRef(null);
+  const navbarRef = useRef(null);
+  const logoRef = useRef(null);
+  const [lineHeight, setLineHeight] = useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setInterval(() => {
       if (fixedSlider.current) {
         var slidHeight = fixedSlider.current.offsetHeight;
@@ -45,16 +46,15 @@ const Homepage1 = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <IntroWithSlider1 sliderRef={fixedSlider} />
-      <div ref={MainContent} className="main-content">
-        <AboutUs1 />
-        <Services1 />
-        <Numbers1 />
-        <Works1Slider />
+      <IntroWithSlider sliderRef={fixedSlider} />
+      <div ref={MainContent} className="main-content relative">
+        <AboutUs />
+        <Services />
+        <Numbers />
+        <WorksSlider />
         <VideoWithTestimonials />
         <SkillsCircle theme="dark" subBG />
-        <Clients1 theme="dark" />
-       
+        <Clients theme="dark" />
         <CallToAction subBG />
         <Footer />
       </div>

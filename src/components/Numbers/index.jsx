@@ -4,11 +4,11 @@ import numbers1Data from "../../data/sections/numbers1.json";
 import Split from "../Split";
 import VisibilitySensor from "react-visibility-sensor";
 
-const Numbers1 = () => {
+const Numbers = () => {
   return (
     <section className="number-sec section-padding sub-bg">
       <div className="container">
-        <div className="row">
+        <div className="row justify-content-center">
           {numbers1Data.map((item) => (
             <div className="col-lg-3 col-md-6" key={item.id}>
               <div className={`item ${item.id == 1 ? "no-bord" : ""}`}>
@@ -20,7 +20,7 @@ const Numbers1 = () => {
                       <VisibilitySensor onChange={start} delayedCall>
                         <>
                           <span className="count" ref={countUpRef} />{" "}
-                          {item.id == 3 ? "K" : ""}
+                          {item.id == 3 ? "M" : ""}
                         </>
                       </VisibilitySensor>
                     )}
@@ -41,4 +41,4 @@ const Numbers1 = () => {
   );
 };
 
-export default Numbers1;
+export default Numbers;

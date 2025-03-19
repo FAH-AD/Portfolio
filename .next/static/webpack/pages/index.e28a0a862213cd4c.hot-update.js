@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("pages/index",{
+
+/***/ "./src/data/sections/about-us1.json":
+/*!******************************************!*\
+  !*** ./src/data/sections/about-us1.json ***!
+  \******************************************/
+/***/ (function(module) {
+
+module.exports = JSON.parse('{"id":1,"image1":"https://images.pexels.com/photos/8100050/pexels-photo-8100050.jpeg?auto=compress&cs=tinysrgb","image2":"https://avo-nextjs.themescamp.com/img/intro/3.jpg","image3":"https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb","smallTitle":"About Us","title":{"first":"We are more than just","second":"a digital agency."},"content":"We are a solution hub based out of Antwerp and Lahore providing an all round marketing solutions to MSMEs, SMEs, Ecommerce brands and SAAS companies. 5+ years of providing converting visual media and refining businesses\' across the web. From making funnel videos, social media ads, brand promos to developing and maintaining highly interactive & optimized webapps and helping busnisses\' boost their conversion through end-to-end marketing strategies.","features":[{"id":1,"icon":"gleam","name":{"first":"Video","second":"Solutions"},"wowDelay":".3s"},{"id":2,"icon":"paint-bucket","name":{"first":"Web","second":"Solutions"},"wowDelay":".5s"},{"id":3,"icon":"medal","name":{"first":"Marketing","second":"Solutions"},"wowDelay":".8s"}]}');
+
+/***/ })
+
+});

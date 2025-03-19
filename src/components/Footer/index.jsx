@@ -33,8 +33,8 @@ const Footer = ({ noSubBG }) => {
                   <li>
                     <span>Address : </span> A32 ,Kalma Heights,Lahore Pakistan .
                   </li>
-                  <li>
-                    <span>Phone : </span> (+92) 313 0471004
+                  <li className="d-flex" >
+                    <span>Phone : </span> <span>(+32) 471 31 35 54 <br/>(+92) 313 0471004,</span> 
                   </li>
                 </ul>
               </div>

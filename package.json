@@ -1,5 +1,5 @@
 {
-  "name": "avo2-react",
+  "name": "red-thread-labs",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -19,6 +19,7 @@
     "react-modal-video": "^1.2.8",
     "react-slick": "^0.28.1",
     "react-visibility-sensor": "^5.1.1",
+    "scroll-svg": "^1.5.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^7.4.1"
   },

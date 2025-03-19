@@ -104,3 +104,45 @@ section.next-prog {
 section.team.section-padding {
   overflow: hidden;
 }
+
+.scroll-line-container {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100vh;
+  z-index: 10;
+}
+
+.scroll-line-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  opacity: 0.3;
+}
+
+.scroll-line {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background: #3498db;
+  transition: height 0.3s ease-out;
+}
+.scroll-line-container {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100vh;
+  z-index: -1; /* Ensure it stays behind other elements */
+}
+
+.scroll-line-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
