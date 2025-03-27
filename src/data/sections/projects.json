@@ -1,0 +1,43 @@
+[
+    {
+      "id": "1",
+      "title": "DineEase",
+      "category": "Web Development",
+      "client": "Envato.com",
+      "clientUrl": "https://envato.com",
+      "date": "6 August 2022",
+      "categories": [
+        { "name": "Web Design", "url": "/works/works-dark" },
+        { "name": "WordPress", "url": "/works/works-dark" }
+      ],
+      "tags": ["Web", "Design", "Developoment"],
+      "image": "/assets/dineease (2).jpg",
+      "introduction": {
+        "title": "Problem Statement",
+        "description": "this is intro desc",
+        "listItems": [
+          "Aenean sollicitudin",
+          "lorem quis bibendum auctor",
+          "nisi elit conseq uat ipsum",
+          "nec sagittis sem nibh id elit"
+        ]
+      },
+      "images": [
+        { "src": "/assets/dineease (2).jpg", "size": "small" },
+        { "src": "/assets/dineease (3).jpg", "size": "small" },
+        { "src": "/assets/dineease (1).jpg", "size": "big" }
+      ],
+      "description": {
+        "title": "this is title",
+        "text": "this is dummy description"
+      },
+      "videoBackground": "/img/portfolio/project2/bg.jpg",
+      "videoType": "vimeo",
+      "videoId": 127203262,
+      "nextProject": {
+        "image": "/img/portfolio/project1/bg.jpg",
+        "title": "Natural plus modern."
+      }
+    }
+  ]
+  

@@ -1,17 +1,18 @@
 import React from "react";
 import works1SliderData from "../../data/sections/works1Slider.json";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import Swiper core and required modules
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import Link from "next/link";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const WorksSlider = () => {
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
+
   return (
     <section className="work-carousel section-padding pt-0 metro position-re">
       <div className="container ontop">
@@ -35,7 +36,6 @@ const WorksSlider = () => {
                   setTimeout(() => {
                     swiper.params.navigation.prevEl = navigationPrevRef.current;
                     swiper.params.navigation.nextEl = navigationNextRef.current;
-
                     swiper.navigation.destroy();
                     swiper.navigation.init();
                     swiper.navigation.update();
@@ -47,36 +47,28 @@ const WorksSlider = () => {
                 }}
                 speed={1000}
                 breakpoints={{
-                  320: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                  },
-                  640: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                  },
-                  767: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                    centeredSlides: false,
-                  },
-                  991: {
-                    slidesPerView: 2,
-                  },
+                  320: { slidesPerView: 1, spaceBetween: 0 },
+                  640: { slidesPerView: 1, spaceBetween: 0 },
+                  767: { slidesPerView: 1, spaceBetween: 0, centeredSlides: false },
+                  991: { slidesPerView: 2 },
                 }}
               >
                 {works1SliderData.map((slide) => (
                   <SwiperSlide key={slide.id} className="swiper-slide">
-                    <div
-                      className="content wow noraidus fadeInUp"
-                      data-wow-delay=".3s"
-                    >
-                      <div
-                        className="item-img bg-img wow imago"
-                        style={{
-                          backgroundImage: `url(${slide.image})`,
-                        }}
-                      ></div>
+                    <div className="content wow noraidus fadeInUp" data-wow-delay=".3s">
+                      <div className="item-video video-container">
+                        <iframe
+                          width="100%"
+                          height="450"
+                          src={`https://www.youtube.com/embed/${slide.videoId}?autoplay=1&controls=0&mute=1&loop=0&modestbranding=1&showinfo=0&rel=0&playsinline=1&disablekb=1&fs=0cc_load_policy=1`}
+                          title={slide.title}
+                          frameBorder="0"
+                          allow="autoplay; encrypted-media"
+                          allowFullScreen
+                          className="video-slide"
+                          style={{ borderRadius: "20px" , width: "100%" }}
+                        />
+                      </div>
                       <div className="cont">
                         <h6 className="color-font">
                           <Link href="/works/works-dark">{slide.title}</Link>
@@ -92,16 +84,10 @@ const WorksSlider = () => {
                 ))}
               </Swiper>
 
-              <div
-                ref={navigationNextRef}
-                className="swiper-button-next swiper-nav-ctrl simp-next cursor-pointer"
-              >
+              <div ref={navigationNextRef} className="swiper-button-next swiper-nav-ctrl simp-next cursor-pointer">
                 <span className="simple-btn right">Next</span>
               </div>
-              <div
-                ref={navigationPrevRef}
-                className="swiper-button-prev swiper-nav-ctrl simp-prev cursor-pointer"
-              >
+              <div ref={navigationPrevRef} className="swiper-button-prev swiper-nav-ctrl simp-prev cursor-pointer">
                 <span className="simple-btn">Prev</span>
               </div>
             </div>

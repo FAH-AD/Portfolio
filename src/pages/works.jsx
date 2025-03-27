@@ -4,8 +4,10 @@ import Navbar from "../components/Navbar";
 import SmallFooter from "../components/Small-footer";
 import WorksThreeColumnWithFilter from "../components/Works-three-column-with-filter";
 import addParlx from "../common/addParlx";
+import projectsData from "../data/sections/projects.json";
 
 const Works2Dark = () => {
+  
   const fixedHeader = React.useRef(null);
   const MainContent = React.useRef(null);
   const navbarRef = React.useRef(null);
@@ -70,7 +72,7 @@ const Works2Dark = () => {
         </div>
       </header>
       <div ref={MainContent} className="main-content">
-        <WorksThreeColumnWithFilter filterPosition="right" />
+      <WorksThreeColumnWithFilter filterPosition="center" projects={projectsData} />
         <SmallFooter />
       </div>
     </DarkTheme>

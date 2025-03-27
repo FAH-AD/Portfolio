@@ -3,35 +3,35 @@
     "id": 1,
     "title": "art & illustration",
     "secTex": "Innovation and Crafts",
-    "image": "/img/portfolio/metro/01.jpg",
+    "videoId": "Euf5PDrnUNg",
     "slug": "/project-details2/project-details2-dark"
   },
   {
     "id": 2,
     "title": "art & illustration",
     "secTex": "Inspiring new space",
-    "image": "/img/portfolio/metro/02.jpg",
+    "videoId": "yyryvsdZF1Q",
     "slug": "/project-details2/project-details2-dark"
   },
   {
     "id": 3,
     "title": "art & illustration",
     "secTex": "Natural plus modern",
-    "image": "/img/portfolio/metro/03.jpg",
+    "videoId": "Trfuv2qYZKs",
     "slug": "/project-details2/project-details2-dark"
   },
   {
     "id": 4,
     "title": "art & illustration",
     "secTex": "Innovation and Crafts",
-    "image": "/img/portfolio/metro/04.jpg",
+    "videoId": "RmEE16ewepI",
     "slug": "/project-details2/project-details2-dark"
   },
   {
     "id": 5,
     "title": "art & illustration",
     "secTex": "Natural plus modern",
-    "image": "/img/portfolio/metro/05.jpg",
+    "videoId": "mluASqAr9cY",
     "slug": "/project-details2/project-details2-dark"
   }
 ]
