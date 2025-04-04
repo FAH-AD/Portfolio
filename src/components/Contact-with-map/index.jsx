@@ -115,9 +115,11 @@ const ContactWithMap = ({ theme = "dark" }) => {
                 </Split>
                 <div className="item mb-40">
                   <h5>
-                    <a href="#0">softigenix_support@website.com</a>
+                    <a href="#0">redthreadlabs_support@website.com</a>
                   </h5>
+                  <h5>(+32) 471 31 35 54</h5>
                   <h5>(+92) 313 0471004</h5>
+                  
                 </div>
                 <Split>
                   <h3 className="custom-font wow" data-splitting>
@@ -125,6 +127,14 @@ const ContactWithMap = ({ theme = "dark" }) => {
                   </h3>
                 </Split>
                 <div className="item">
+                <h6>
+                Vekestraat 51, 2160
+                    <br />
+                    Antwerp Belgium.
+                    <br />
+                    <br />
+
+                  </h6>
                   <h6>
                   A32 ,Kalma Heights,
                     <br />
@@ -151,19 +161,23 @@ const ContactWithMap = ({ theme = "dark" }) => {
         </div>
       </section>
       <div className="map" id="ieatmaps">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19868.687203718404!2d-0.14297520856388865!3d51.502466162777694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2seg!4v1644772966009!5m2!1sen!2seg"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
+      <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.1866250971894!2d4.510190315745621!3d51.10274337957186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3ffb1d0ea98c7%3A0x12f5ef4cb2d9df59!2sVekestraat%2051%2C%202160%20Wommelgem%2C%20Belgium!5e0!3m2!1sen!2sbe!4v1712137138934!5m2!1sen!2sbe"
+  width="100%"
+  height="450"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
       </div>
 
       <footer className="footer-half sub-bg">
         <div className="container">
           <div className="copyrights text-center mt-0">
             <p>
-            © 2025, Softigenix All Rights Reserved.
+            © 2025, RedThreadLabs All Rights Reserved.
              
             </p>
           </div>

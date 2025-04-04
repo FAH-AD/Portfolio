@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 
-const NextProject = ({ projectImage, projectTitle }) => {
+const NextProject = ({ projectImage, projectTitle, projectSlug }) => {
+  useEffect(() => {
+    console.log("Next Project Data: ", projectImage, projectTitle, projectSlug);
+  }, []);
+
   return (
     <section className="next-prog section-padding">
       <div className="container">
@@ -10,15 +14,13 @@ const NextProject = ({ projectImage, projectTitle }) => {
             <div className="box">
               <div
                 className="bg-img valign"
-                style={{
-                  backgroundImage: `url(${projectImage})`,
-                }}
+                style={{ backgroundImage: `url("${projectImage}")` }}
                 data-overlay-dark="4"
               >
                 <div className="caption ontop valign">
                   <div className="o-hidden full-width">
-                    <h1>
-                      <Link href="/project-details2/project-details2-dark">
+                    <h1 className="hover-title">
+                      <Link href={`/projects/${projectSlug}`}>
                         <span className="stroke">{projectTitle}</span>
                       </Link>
                     </h1>
@@ -26,11 +28,9 @@ const NextProject = ({ projectImage, projectTitle }) => {
                 </div>
                 <div className="copy-cap valign">
                   <div className="cap full-width">
-                    <h1>
-                      <Link href="/project-details2/project-details2-dark">
-                        <a>
-                          <span>{projectTitle}</span>
-                        </a>
+                    <h1 className="hover-title">
+                      <Link href={`/projects/${projectSlug}`}>
+                        <span>{projectTitle}</span>
                       </Link>
                     </h1>
                   </div>

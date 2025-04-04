@@ -28,10 +28,10 @@ const Footer = ({ noSubBG }) => {
               <div className="con-info custom-font">
                 <ul>
                   <li>
-                    <span>Email : </span> softigenix_support@website.com
+                    <span>Email : </span> redthreadlabs_support@website.com
                   </li>
-                  <li>
-                    <span>Address : </span> A32 ,Kalma Heights,Lahore Pakistan .
+                  <li className="d-flex">
+                    <span>Address : </span> <span>Vekestraat 51, 2160, Antwerp Belgium  <br />  A32 ,Kalma Heights,Lahore Pakistan .   </span>
                   </li>
                   <li className="d-flex" >
                     <span>Phone : </span> <span>(+32) 471 31 35 54 <br/>(+92) 313 0471004,</span> 
@@ -108,7 +108,7 @@ const Footer = ({ noSubBG }) => {
         </div>
         <div className="copyrights text-center">
           <p>
-            © 2025, Softigenix All Rights Reserved.
+            © 2025,RedThreadLabs All Rights Reserved.
           </p>
         </div>
       </div>

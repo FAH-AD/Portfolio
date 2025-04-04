@@ -51,7 +51,7 @@ const Homepage1 = () => {
         <AboutUs />
         <Services />
         <Numbers />
-        <WorksSlider />
+        {/* <WorksSlider /> */}
         <VideoWithTestimonials />
         <SkillsCircle theme="dark" subBG />
         <Clients theme="dark" />

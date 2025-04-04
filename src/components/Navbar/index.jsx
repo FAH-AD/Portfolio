@@ -25,12 +25,12 @@ const Navbar = ({ lr, nr, theme }) => {
           <a className="logo">
             {theme ? (
               theme === "themeL" ? (
-                <h4>Softigenix</h4>
+                <h4>RedThreadLabs</h4>
               ) : (
-                <h4>Softigenix</h4>
+                <h4>RedThreadLabs</h4>
               )
             ) : (
-             <h4>Softigenix</h4>
+             <h4>RedThreadLabs</h4>
             )}
           </a>
         </Link>
@@ -60,7 +60,7 @@ const Navbar = ({ lr, nr, theme }) => {
             </li>
 
             <li className="nav-item " >
-            <Link href="/works">
+            <Link href="/portfolio">
                   <a className="nav-link">Portfolio</a>
                 </Link>
               

@@ -36,19 +36,19 @@ const WorksThreeColumnWithFilter = ({ filterPosition, projects }) => {
           >
             <div className="filter">
               <span data-filter="*" className="active">All</span>
-              <span data-filter=".brand">Branding</span>
-              <span data-filter=".web">Web App</span>
-              <span data-filter=".graphic">Creative</span>
+              <span data-filter=".Development">Development</span>
+              <span data-filter=".marketing">Marketing</span>
+              <span data-filter=".creatives">Creatives</span>
             </div>
           </div>
 
           <div className="gallery full-width">
             {projects.map((project) => (
               <div key={project.id} className={`col-lg-4 col-md-6 items ${project.category}`}>
-                <div className="item-img wow fadeInUp" data-wow-delay=".4s">
+                <div className="item-img  wow fadeInUp" data-wow-delay=".4s">
                   {project.id ? (
                    <Link href={`/projects/${encodeURIComponent(project.title.toLowerCase().replace(/\s+/g, "-"))}`}>
-                      <img src={project.image} alt={project.title} />
+                      <img className="project-img" src={project.image} alt={project.title} />
                     </Link>
                   ) : (
                     <img src={project.image} alt={project.title} />
@@ -56,9 +56,9 @@ const WorksThreeColumnWithFilter = ({ filterPosition, projects }) => {
                 </div>
                 <div className="cont">
                   <h6>{project.title}</h6>
-                  <span>
+                  <span className="d-flex" style={{gap: "14px",justifyContent: "center"}}>
                     {project.tags?.map((tag, index) => (
-                      <a key={index} href="#0">{tag}</a>
+                      <p key={index} >{tag}</p>
                     ))}
                   </span>
                 </div>

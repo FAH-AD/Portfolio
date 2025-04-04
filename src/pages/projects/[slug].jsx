@@ -15,29 +15,41 @@ const ProjectDetails = () => {
   const router = useRouter();
   const { slug } = router.query; // Get project slug from URL
   const [project, setProject] = useState(null);
+  const [nextProject, setNextProject] = useState(null);
 
   useEffect(() => {
     if (!slug) return; // Wait for slug to be available
 
-    console.log("slug (string):", slug);
-    console.log("typeof slug:", typeof slug);
-    console.log("projectData:", projectData);
-
-    // Convert project titles into slugs and match with the URL
-    const foundProject = projectData.find(
+    // Find the project based on the slug in URL
+    const projectIndex = projectData.findIndex(
       (p) => p.title.toLowerCase().replace(/\s+/g, "-") === slug
     );
 
-    console.log("project:", foundProject);
-    setProject(foundProject);
+    if (projectIndex === -1) {
+      setProject(null); // If not found, set project as null
+      return;
+    }
+
+    // Set the current project
+    setProject(projectData[projectIndex]);
+
+    // Get the next project (loop back to the first if it's the last project)
+    const nextIndex = (projectIndex + 1) % projectData.length;
+    setNextProject(projectData[nextIndex]);
   }, [slug]);
 
+  useEffect(() => {
+    console.log("Project Data: ", project); // Debugging log for the project data
+  }, [project]);
+
+  // Loading and error handling for project data
   if (!slug) return <p>Loading...</p>;
   if (!project) return <p>Project not found</p>;
 
   return (
     <DarkTheme>
       <Navbar />
+      {/* Project Details Header */}
       <ProjectDetailsHeader
         backgroundImage={project.image}
         category={project.category}
@@ -48,15 +60,44 @@ const ProjectDetails = () => {
         categories={project.categories}
         tags={project.tags}
       />
+      {/* Project Introduction */}
       <ProjectDetailsIntroduction
         title={project.introduction.title}
         description={project.introduction.description}
         listItems={project.introduction.listItems}
       />
+      {/* Project Images */}
       <ProjectDetailsImages images={project.images} />
-      <ProjectDetailsDescription title={project.description.title} description={project.description.text} />
-      <ProjectDetailsVideo videoBackground={project.videoBackground} videoType={project.videoType} videoId={project.videoId} />
-      <NextProject projectImage={project.nextProject.image} projectTitle={project.nextProject.title} />
+      {/* Project Description */}
+      <ProjectDetailsDescription
+        title={project.description.title}
+        description={project.description.text}
+      />
+      {/* Project Video */}
+      <ProjectDetailsVideo
+        videoBackground={project.videoBackground}
+        videoType={project.videoType}
+        videoId={project.videoId}
+      />
+
+    
+     
+      {/* Next Project */}
+      {nextProject && (
+        <NextProject
+          projectImage={nextProject.image}
+          projectTitle={nextProject.title}
+          projectSlug={nextProject.title
+            .toLowerCase()
+            .replace(/\s+/g, "-")}
+        />
+
+        
+      )}
+
+
+       
+      {/* Footer */}
       <SmallFooter />
     </DarkTheme>
   );

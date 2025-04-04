@@ -20,12 +20,12 @@ const NavbarFullMenu = ({ theme, lr }) => {
             <a href="#0">
               {theme ? (
                 theme === "light" ? (
-                  <h4>Softigenix</h4>
+                  <h4>RedThreadLabs</h4>
                 ) : (
-                  <h4>Softigenix</h4>
+                  <h4>RedThreadLabs</h4>
                 )
               ) : (
-                <h4>Softigenix</h4>
+                <h4>RedThreadLabs</h4>
               )}
             </a>
           </div>
@@ -96,7 +96,8 @@ const NavbarFullMenu = ({ theme, lr }) => {
               <div className="cont-info">
                 <div className="item">
                   <h6>Phone :</h6>
-                  <p>+92 313-0471004</p>
+                  <p>(+32) 471 31 35 54 </p>
+                  <p>(+92) 313 0471004</p>
                 </div>
                 <div className="item">
                   <h6>Address :</h6>
@@ -107,7 +108,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
                 <div className="item">
                   <h6>Email :</h6>
                   <p>
-                    <a href="#0">softigenix@gmail.com</a>
+                    <a href="#0">RedThreadLabs@gmail.com</a>
                   </p>
                 </div>
               </div>

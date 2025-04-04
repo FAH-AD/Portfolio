@@ -2,7 +2,39 @@
     {
       "id": "1",
       "title": "DineEase",
-      "category": "Web Development",
+      "showCase":"",
+      "category": "Development",
+      "client": "Envato.com",
+      "clientUrl": "",
+      "date": "6 August 2022",
+      "video":"1071288710",
+      "categories": [
+        { "name": "Web Design", "url": "/works/works-dark" },
+        { "name": "WordPress", "url": "/works/works-dark" }
+      ],
+      "tags": ["Web", "Design", "Developoment"],
+      "image": "/assets/dineease (2).jpg",
+      "introduction": {
+        "title": "Problem Statement",
+        "description": "Restaurants often struggle with inefficiencies in their ordering processes, leading to long wait times, order miscommunication, and customer dissatisfaction. Traditional restaurant ordering methods, whether through servers or phone calls, can result in delays, incorrect orders, and high operational costs.For customers, waiting for a server to take an order or manually calling a restaurant for takeout is inconvenient. Misunderstandings between customers and staff can lead to incorrect food orders, ultimately reducing customer satisfaction and restaurant revenue. Many restaurants also lack an effective loyalty program to retain customers, and integrating digital solutions into existing operations is often a challenge."
+        
+      },
+      "images": [
+        { "src": "/assets/dineease (2).jpg", "size": "small" },
+        { "src": "/assets/dineease (3).jpg", "size": "small" },
+        { "src": "/assets/dineease (1).jpg", "size": "big" }
+      ],
+      "description": {
+        "title": "Solution",
+        "text": "this is dummy description"
+      }
+      
+    },
+    {
+      "id": "2",
+      "title": "DineEase",
+      "showCase":"DineEase",
+      "category": "Development",
       "client": "Envato.com",
       "clientUrl": "https://envato.com",
       "date": "6 August 2022",
@@ -14,13 +46,8 @@
       "image": "/assets/dineease (2).jpg",
       "introduction": {
         "title": "Problem Statement",
-        "description": "this is intro desc",
-        "listItems": [
-          "Aenean sollicitudin",
-          "lorem quis bibendum auctor",
-          "nisi elit conseq uat ipsum",
-          "nec sagittis sem nibh id elit"
-        ]
+        "description": "Restaurants often struggle with inefficiencies in their ordering processes, leading to long wait times, order miscommunication, and customer dissatisfaction. Traditional restaurant ordering methods, whether through servers or phone calls, can result in delays, incorrect orders, and high operational costs.For customers, waiting for a server to take an order or manually calling a restaurant for takeout is inconvenient. Misunderstandings between customers and staff can lead to incorrect food orders, ultimately reducing customer satisfaction and restaurant revenue. Many restaurants also lack an effective loyalty program to retain customers, and integrating digital solutions into existing operations is often a challenge."
+        
       },
       "images": [
         { "src": "/assets/dineease (2).jpg", "size": "small" },
@@ -28,16 +55,44 @@
         { "src": "/assets/dineease (1).jpg", "size": "big" }
       ],
       "description": {
-        "title": "this is title",
+        "title": "Solution",
         "text": "this is dummy description"
-      },
-      "videoBackground": "/img/portfolio/project2/bg.jpg",
-      "videoType": "vimeo",
-      "videoId": 127203262,
-      "nextProject": {
-        "image": "/img/portfolio/project1/bg.jpg",
-        "title": "Natural plus modern."
       }
+      
     }
+,
+{
+  "id": "3",
+  "title": "DineEase",
+  "showCase":"DineEase",
+  "category": "Development",
+  "client": "Envato.com",
+  "clientUrl": "https://envato.com",
+  "date": "6 August 2022",
+  "categories": [
+    { "name": "Web Design", "url": "/works/works-dark" },
+    { "name": "WordPress", "url": "/works/works-dark" }
+  ],
+  "tags": ["Web", "Design", "Developoment"],
+  "image": "/assets/dineease (2).jpg",
+  "introduction": {
+    "title": "Problem Statement",
+    "description": "Restaurants often struggle with inefficiencies in their ordering processes, leading to long wait times, order miscommunication, and customer dissatisfaction. Traditional restaurant ordering methods, whether through servers or phone calls, can result in delays, incorrect orders, and high operational costs.For customers, waiting for a server to take an order or manually calling a restaurant for takeout is inconvenient. Misunderstandings between customers and staff can lead to incorrect food orders, ultimately reducing customer satisfaction and restaurant revenue. Many restaurants also lack an effective loyalty program to retain customers, and integrating digital solutions into existing operations is often a challenge."
+    
+  },
+  "images": [
+    { "src": "/assets/dineease (2).jpg", "size": "small" },
+    { "src": "/assets/dineease (3).jpg", "size": "small" },
+    { "src": "/assets/dineease (1).jpg", "size": "big" }
+  ],
+  "description": {
+    "title": "Solution",
+    "text": "this is dummy description"
+  }
+ 
+}
+
+
+    
   ]
   

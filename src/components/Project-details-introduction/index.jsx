@@ -7,15 +7,15 @@ const ProjectDetailsIntroduction = ({  title, description, listItems }) => {
         <div className="row">
           <div className="col-lg-3 col-md-4">
             <div className="htit">
-              <h4>
+              <h4 style={{whiteSpace: "nowrap"}} >
                 <span>01 </span> {title}
               </h4>
             </div>
           </div>
           <div className="col-lg-8 offset-lg-1 col-md-8">
             <div className="text js-scroll__content">
-              <p className="extra-text">{description}</p>
-
+              <p>{description}</p>
+            
               {listItems && listItems.length > 0 && (
                 <ul className="smp-list mt-30">
                   {listItems.map((item, index) => (

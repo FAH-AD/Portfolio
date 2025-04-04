@@ -160,4 +160,56 @@ section.team.section-padding {
   height: 100%; /* Forces video to take full height */
   object-fit: cover; /* Makes video cover the area */
 }
+.project-img:hover{
+  cursor: pointer !important;
+
+}
+.hover-title{
+  min-width: 100% !important;
+}
+.hover-title span {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.hover-title:hover span {
+  cursor: pointer !important;
+  transform: translateY(-5px);
+  opacity: 0.8;
+}
+
+.check-all-projects-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+  text-align: center;
+  z-index: 1;
+}
+
+.check-all-projects-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  transition: left 0.4s ease-in-out;
+}
+
+.check-all-projects-button:hover {
+  color: #000;
+}
+
+.check-all-projects-button:hover::before {
+  left: 0;
+}
 

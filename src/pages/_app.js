@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Softigenix</title>
+        <title>RedThreadLabs</title>
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
       <Cursor />
